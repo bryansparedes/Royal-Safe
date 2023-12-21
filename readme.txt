@@ -1,0 +1,17 @@
+display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    max-width: 1200px;
+    width: 100%;
+    border: 1px solid #C2B24E;
+    outline: none;
+    color: #C2B24E;
+    font-size: 18px;
+    border-radius: 5px;
+    margin: 15px 0;
+    margin-bottom: 40px;
+    background-color: black;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
