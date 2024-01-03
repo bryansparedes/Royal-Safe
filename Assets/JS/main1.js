@@ -10,6 +10,8 @@ const darkMode = document.querySelector('.card-container');
 const darkMode2 = document.querySelector('.card-container2');
 const darkMode3 = document.querySelector('.card-container3');
 const darkMode4 = document.querySelector('.container-data');
+const darkMode5 = document.querySelector('.container__reviews');
+const darkMode6 = document.querySelector('.swiper-slide');
 const darkModal = document.querySelector('.modal-container');
 const darkModal2 = document.querySelector('.modal-container2');
 const darkModal3 = document.querySelector('.modal-container3');
@@ -29,6 +31,8 @@ toggle.addEventListener('click', (e) => {
     darkMode2.classList.toggle('dark');
     darkMode3.classList.toggle('dark');
     darkMode4.classList.toggle('dark');
+    darkMode5.classList.toggle('dark');
+    darkMode6.classList.toggle('dark');
     darkModal.classList.toggle('dark');
     darkModal2.classList.toggle('dark');
     darkModal3.classList.toggle('dark');
@@ -326,4 +330,20 @@ closeModal8.addEventListener("click", (e) => {
     e.preventDefault();
 
     modal8.classList.remove('modal-show');
+});
+
+// REVIEWS
+
+const swiper = new Swiper('.js-testimonials-slider', {
+    grabCursor: true,
+    spaceBetween: 20,
+    pagination:{
+        el: '.js-testimonials-pagination',
+        clickable: true
+    },
+    breakpoints:{
+        767:{
+            slidesPerView: 2
+        }
+    }
 });
